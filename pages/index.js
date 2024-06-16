@@ -120,7 +120,7 @@ impl Contract {
   
    const generatedCode = JSON.parse(completion.choices[0].message.content);
    handleCodeChange(generatedCode.code);
-   setCompiledOutput(generatedCode.code);
+  //  setCompiledOutput(generatedCode.code);
    console.log("generated code", generatedCode);
   } catch (error) {
    console.error("Error generating code:", error);
@@ -227,10 +227,10 @@ impl Contract {
 {
  compilationError && (<div className="text-sm">{compilationError}</div>)
 }
-
+{/* 
        {compiledOutput && (
   <pre className="text-left text-sm text-slate-400">{compiledOutput}</pre>
- )}
+ )} */}
        </div>
        <div className="text-white">phoenix ai</div>
        <div className="p-4 bg-neutral-800 text-white h-auto flex flex-col">
